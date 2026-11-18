@@ -79,3 +79,130 @@ nav a:first-child{
     font-family: Georgia, serif;
     color: var(--tinta);
 }
+
+.hero{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 64px;
+    align-items: center;
+    padding: 84px 0 80px;
+}
+
+.label{
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: var(--abu);
+    display: flex;
+    align-items: center;
+}
+
+.label::before{
+    content: "";
+    width: 24px;
+    height: 2px;
+    background: var(--aksen);
+    margin-right: 10px;
+}
+
+.hero h1{
+    font-size: 54px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.deskripsi{
+    font-size: 18px;
+    max-width: 520px;
+    margin-bottom: 30px;
+}
+
+.tombol-hero{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.tombol-hero a:first-child{
+    background: var(--aksen);
+    color: var(--tinta);
+    font-weight: 600;
+    padding: 12px 22px;
+    border-radius: 8px;
+    border: 2px solid var(--tinta);
+    transition: 0.2s;
+}
+
+.tombol-hero a:first-child:hover{
+    background: var(--tinta);
+    color: var(--aksen);
+    transform: translateY(-2px);
+}
+
+.tombol-hero a:last-child{
+    border-bottom: 2px solid var(--aksen);
+    padding-bottom: 2px;
+    font-weight: 500;    
+}
+
+.foto-profil{
+    position: relative;
+    width: 300px;
+    height: 370px;
+    justify-self: center;
+}
+
+.foto-profil img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    position: relative;
+}
+
+.foto-profil::before{
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 18px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--aksen);
+    border-radius: 6px;
+}
+
+.panel-foto{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--latar);
+    padding: 18px;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: 0.3s;
+}
+
+.foto-profil:hover .panel-foto{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.panel-foto strong{
+    display: block;
+}
+
+.panel-foto p{
+    color: var(--abu);
+    font-size: 13px;
+}
+
+.panel-foto a{
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    background: var(--aksen);
+    color: var(--tinta);
+    font-weight: 600;
+    padding: 9px 14px;
+    border-radius: 8px;
+}

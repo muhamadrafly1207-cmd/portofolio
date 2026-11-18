@@ -42,3 +42,40 @@ main{
     margin: 0 auto;
     padding: 0 32px;
 }
+
+header{
+    position: sticky;
+    top: 0;
+    background: var(--latar);
+    border-bottom: 1px solid var(--garis);
+    z-index: 10;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    height: 64px;
+    gap: 28px;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+nav a{
+    font-size: 14px;
+    color: var(--abu);
+    padding: 6px 0;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+}
+
+nav a:hover{
+    color: var(--tinta);
+    border-bottom-color: var(--aksen)
+}
+
+nav a:first-child{
+    margin-right: auto;
+    font-family: Georgia, serif;
+    color: var(--tinta);
+}

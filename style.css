@@ -285,3 +285,59 @@ h2{
     opacity: 1;
     margin-top: 14px;
 }
+
+.kartu-proyek {
+    background: var(--tinta);
+    color: var(--latar);
+    border-radius: 10px;
+    padding: 36px;
+    border-top: 3px solid transparent;
+    transition: 0.25s;
+}
+
+.kartu-proyek:hover{
+    transform: translateY(-4px);
+    border-top-color: var(--aksen);
+}
+
+.kartu-proyek small{
+    display: block;
+    color: var(--aksen);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+}
+
+.kartu-proyek h3{
+    font-size: 26px;
+    margin: 8px;
+}
+
+.kartu-proyek p{
+    color: #cbd5e1;
+    font-size: 15px;
+    max-width: 680px;
+}
+
+.tag-teknologi{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.tag-teknologi span{
+    border: 1px solid #334155;
+    color: #cbd5e1;
+    border-radius: 20px;
+    padding: 3px 12px;
+    font-size: 12px;
+}
+
+.kartu-proyek a{
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--aksen);
+    .hover {
+        text-decoration: underline;
+    }
+}

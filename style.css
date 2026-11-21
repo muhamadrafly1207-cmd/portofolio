@@ -182,7 +182,8 @@ nav a:first-child{
     transition: 0.3s;
 }
 
-.foto-profil:hover .panel-foto{
+.foto-profil:hover .panel-foto,
+.foto-profil.aktif .panel-foto {
     opacity: 1;
     transform: translateY(0);
 }
@@ -562,4 +563,53 @@ footer {
     padding-top: 20px;
     color: #94a3b8;
     font-size: 13px;
+}
+
+@media (max-width: 860px) {
+    nav {
+        height: auto;
+        padding: 12px 20px;
+        flex-wrap: wrap;
+        gap: 8px 18px;
+    }
+
+    nav a:first-child {
+        flex-basis: 100%;
+    }
+
+    main {
+        padding: 0 20px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 56px;
+        padding: 48px 0;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .daftar-keahlian {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .kartu-proyek {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 520px) {
+    .daftar-keahlian {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (hover: none) {
+    .detail {
+        max-height: none;
+        opacity: 1;
+        margin-top: 14px;
+    }
 }

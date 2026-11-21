@@ -514,3 +514,52 @@ h2{
     background: var(--tinta);
     color: var(--aksen);
 }
+
+footer {
+    background: var(--tinta);
+    color: var(--latar);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px 28px;
+    padding: 64px max(32px, calc((100% - 1056px) / 2));
+}
+
+.kontak-teks {
+    flex: 1 1 360px;
+}
+
+.kontak-teks p {
+    color: #cbd5e1;
+}
+
+.tombol-kontak {
+    background: var(--aksen);
+    color: var(--tinta);
+    font-weight: 600;
+    padding: 12px 22px;
+    border-radius: 8px;
+    border: 2px solid var(--aksen);
+    transition: 0.2s;
+}
+
+.tombol-kontak:hover {
+    background: transparent;
+    color: var(--aksen);
+    transform: translateY(-2px);
+}
+
+.link-instagram {
+    color: var(--aksen);
+    font-weight: 500;
+    border-bottom: 2px solid var(--aksen);
+    padding-bottom: 2px;
+}
+
+.footer small {
+    flex-basis: 100%;
+    border-top: 1px solid #334155;
+    padding-top: 20px;
+    color: #94a3b8;
+    font-size: 13px;
+}

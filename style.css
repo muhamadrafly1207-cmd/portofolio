@@ -159,7 +159,7 @@ nav a:first-child{
     position: relative;
 }
 
-.foto-profil::before{
+.foto-profil::before {
     content: "";
     position: absolute;
     left: 18px;
@@ -168,6 +168,12 @@ nav a:first-child{
     height: 100%;
     border: 2px solid var(--aksen);
     border-radius: 6px;
+    transition: 0.3s;
+}
+
+.foto-profil:hover::before,
+.foto-profil.aktif::before {
+    transform: translate(-7px, -7px);
 }
 
 .panel-foto{

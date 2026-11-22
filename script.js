@@ -56,3 +56,12 @@ daftarSertifikat.forEach((item, i) => {
 tombolBerikutnya.addEventListener("click", () => tampilkan((indeksAktif + 1) % daftarSertifikat.length));
 tombolSebelumnya.addEventListener("click", () => tampilkan((indeksAktif - 1 + daftarSertifikat.length) % daftarSertifikat.length));
 tombolTutup.addEventListener("click", () => penampil.classList.remove("buka"));
+
+folder.addEventListener("click", () => {
+    folder.classList.toggle("buka");
+    daftar.classList.toggle("buka");
+    if (!folder.classList.contains("buka")) {
+        penampil.classList.remove("buka"); }
+});
+
+fotoProfil.addEventListener("click", () => fotoProfil.classList.toggle("aktif"));

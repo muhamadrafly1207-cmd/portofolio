@@ -53,3 +53,6 @@ daftarSertifikat.forEach((item, i) => {
     daftar.appendChild(baris);
 });
 
+tombolBerikutnya.addEventListener("click", () => tampilkan((indeksAktif + 1) % daftarSertifikat.length));
+tombolSebelumnya.addEventListener("click", () => tampilkan((indeksAktif - 1 + daftarSertifikat.length) % daftarSertifikat.length));
+tombolTutup.addEventListener("click", () => penampil.classList.remove("buka"));

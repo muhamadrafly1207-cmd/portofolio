@@ -34,3 +34,22 @@ const tombolTutup = document.getElementById("tombol-tutup");
 
 const fotoProfil = document.querySelector(".foto-profil");
 let indeksAktif = 0;
+
+function tampilkan(i) {
+    indeksAktif = i;
+    const item = daftarSertifikat[i];
+    gambar.src = item.gambar;
+    gambar.alt = "Sertifikat " + item.judul;
+    judul.textContent = item.judul;
+    info.textContent = item.info;
+    penampil.classList.add("buka");
+}
+
+daftarSertifikat.forEach((item, i) => {
+    const baris = document.createElement("button");
+    baris.className = "baris-sertifikat";
+    baris.innerHTML = item.judul + "<span>" + item.penyelenggara + " . " + item.tahun + "</span>";
+    baris.addEventListener("click", () => tampilkan(i));
+    daftar.appendChild(baris);
+});
+
